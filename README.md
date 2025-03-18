@@ -2,6 +2,8 @@
 
 Structure & architecture inspired by https://www.visuality.pl/posts/introduction-to-ddd-in-ruby-on-rails
 
+APP logic at https://github.com/samuelgaco/pet_tracking/tree/main/app/modules/pet_tracking
+
 ## Setting & running the app:
 
 1. Prerequisites
