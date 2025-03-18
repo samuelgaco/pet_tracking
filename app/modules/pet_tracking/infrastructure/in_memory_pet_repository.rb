@@ -1,28 +1,27 @@
-require_relative './pet_repository'
+require_relative "./pet_repository"
 
 module PetTracking
     module Infrastructure
       class InMemoryPetRepository < Infrastructure::PetRepository
-
         def self.instance
           @instance ||= new
         end
 
         def initialize
           @pets = {}
-          @next_id = 1  
+          @next_id = 1
         end
 
         def pets
           @pets.values
         end
-  
-  
+
+
         def save(pet)
-          pet.id = @next_id  
+          pet.id = @next_id
           @pets[@next_id] = pet
-          @next_id += 1  
-          pet 
+          @next_id += 1
+          pet
         end
 
         def find_by_id(id)
