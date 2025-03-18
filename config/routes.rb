@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "posts#index"
 
-  resources :pets, only: [:create] do
+  resources :pets, only: [ :create ] do
     collection do
       get :outside_zone
     end

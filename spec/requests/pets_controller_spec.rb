@@ -87,7 +87,7 @@ RSpec.describe PetsController, type: :request do
 
     it 'returns error' do
       post pets_path, params: invalid_params
-      
+
       expect(JSON.parse(response.body)["pets"].all? { |pet| pet["pet_type"] == "dog" ? pet["lost_tracker"].nil? : true }).to be true
 
       expect(JSON.parse(response.body)["pets"].count).to eq(POST_TIMES + 2)
