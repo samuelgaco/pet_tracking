@@ -1,4 +1,4 @@
-# Pet tracking app with a DDD approach for the database modelling.
+# Pet tracking app with a DDD approach for database modelling.
 
 Structure & architecture inspired by https://www.visuality.pl/posts/introduction-to-ddd-in-ruby-on-rails
 
